@@ -92,6 +92,18 @@ PackageCompiler: bundled libraries:
   Total library file size: 255.703 MiB
 ```
 
+You can check the storage footprint of the `build` folder from the terminal by running:
+```
+du -hs /path/to/directory
+```
+
+On my machine, I got:
+```
+$ du -hs build/*
+2.0M	build/bin
+73M	build/lib
+```
+
 #### 4. Run the compiled binary app
 `cd` a terminal session to `build/bin`, and run:
 ```
